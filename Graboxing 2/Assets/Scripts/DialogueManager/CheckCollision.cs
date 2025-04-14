@@ -19,7 +19,7 @@ public class CheckCollision : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("NPC"))
         {
-            EnableRagdoll();
+            PlayerMove.moveSpeed = 0;
             dialogue.gameObject.SetActive(true);
         }
     }
@@ -29,20 +29,6 @@ public class CheckCollision : MonoBehaviour
         if (collision.gameObject.tag.Equals("NPC"))
         {
             dialogue.gameObject.SetActive(false);
-            DisableRagdoll();
-            SceneManager.LoadScene("Assets/Scenes/QRCodeReaderScene.unity");
         }
-    }
-
-    // Let the rigidbody take control and detect collisions.
-    void EnableRagdoll()
-    {
-        player_rigid.isKinematic = false;
-    }
-
-    // Let animation control the rigidbody and ignore collisions.
-    void DisableRagdoll()
-    {
-        player_rigid.isKinematic = true;
     }
 }
