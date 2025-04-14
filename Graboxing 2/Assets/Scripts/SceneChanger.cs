@@ -3,21 +3,19 @@ using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour
 {
-   public GameObject Player;
-   public string sceneToLoad;
+   static public GameObject Player;
+   static public string m_SceneToLoad;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public static void Start(string sceneToLoad)
     {
-        
+        m_SceneToLoad = sceneToLoad;
     }
 
     // Update is called once per frame
-    void Update()
+    static void Update()
     {
-        if (Input.GetMouseButtonDown(0)){
             Player.GetComponent<SavePlayerPosition>().SaveLocation();
-            SceneManager.LoadScene(sceneToLoad);
-        }
+            SceneManager.LoadScene(m_SceneToLoad);
     }
 }

@@ -56,7 +56,8 @@ public class Dialogue : MonoBehaviour
         }
         else
         {
-            gameObject.SetActive(false);
+            PlayerMove.moveSpeed = 10f; 
+            SceneManager.LoadScene("Assets/Scenes/QRCodeReaderScene.unity");
         }
     }
 }
