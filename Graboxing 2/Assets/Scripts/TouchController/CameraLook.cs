@@ -9,7 +9,7 @@ public class CameraLook : MonoBehaviour
     private float XRotation;
     [SerializeField] private Transform PlayerBody;
     public Vector2 LockAxis;
-    public float Sensivity = 40f;
+    public float Sensitivity = 0.2f;
     void Start()
     {
         
@@ -18,8 +18,8 @@ public class CameraLook : MonoBehaviour
     
     void Update()
     {
-        XMove = LockAxis.x * Sensivity * Time.deltaTime;
-        YMove = LockAxis.y * Sensivity * Time.deltaTime;
+        XMove = LockAxis.x * Sensitivity * Time.deltaTime;
+        YMove = LockAxis.y * Sensitivity * Time.deltaTime;
         XRotation -= YMove;
         XRotation = Mathf.Clamp(XRotation, -90f, 90f);
 
