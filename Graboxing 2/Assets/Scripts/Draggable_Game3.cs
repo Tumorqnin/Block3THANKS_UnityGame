@@ -2,21 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Draggable : MonoBehaviour
+public class DraggableJoint : MonoBehaviour
 {
-    public delegate void DragEndedDelegate(Draggable draggableObject);
+    public delegate void DragEndedDelegate(DraggableJoint draggableObject);
     public DragEndedDelegate dragEndedCallback;
 
     private bool isDragged = false;
     private Vector3 mouseDragStartPosition;
     private Vector3 spriteDragStartPosition;
-     private Vector3 snapPosition;
+    private Vector3 snapPosition;
     private Vector3 snapPositionStart;
 
-     void Start()
+    void Start()
     {
-     snapPosition = this.transform.position;
-     snapPositionStart = this.transform.position;
+        snapPosition = this.transform.position;
+        snapPositionStart = this.transform.position;
     }
 
     private void OnMouseDown()
