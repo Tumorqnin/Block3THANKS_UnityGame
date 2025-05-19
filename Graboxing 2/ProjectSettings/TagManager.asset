@@ -9,6 +9,7 @@ TagManager:
   - door1
   - DialogueSystem
   - NPC
+  - IconsCreationCamera
   layers:
   - Default
   - TransparentFX
