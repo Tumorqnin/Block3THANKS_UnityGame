@@ -5,43 +5,33 @@ using System.Collections;
 
 public class CheckCollision : MonoBehaviour
 {
-    GameObject dialogue;
-    GameObject gameStarter;
+    [SerializeField] private GameObject objectToCollideWith;
+    public GameObject ObjectToCollideWith => objectToCollideWith;
+    [SerializeField] private GameObject objectToSetOff;
+    public GameObject ObjectToSetOff => objectToSetOff;
     public Rigidbody player_rigid;
 
     void Start()
     {
-        dialogue = GameObject.FindWithTag("DialogueSystem");
-        gameStarter = GameObject.FindWithTag("Game");
-        dialogue.gameObject.SetActive(false);
+        objectToSetOff = GameObject.FindWithTag(ObjectToSetOff.ToString());
+        objectToSetOff.SetActive(false);
         player_rigid = GetComponent<Rigidbody>();
     }
 
     void OnTriggerEnter(Collider collision)
     {
-        if (collision.gameObject.tag.Equals("NPC"))
-        {
-           // PlayerMove.moveSpeed = 0;
-            dialogue.gameObject.SetActive(true);
-        }
-
-        if (collision.gameObject.tag.Equals("GameStarter"))
+        if (collision.gameObject.tag.Equals(ObjectToCollideWith.ToString()))
         {
             PlayerMove.moveSpeed = 0;
-            gameStarter.gameObject.SetActive(true);
+            objectToSetOff.gameObject.SetActive(true);
         }
     }
 
     void OnTriggerExit(Collider collision)
     {
-        if (collision.gameObject.tag.Equals("NPC"))
+        if (collision.gameObject.tag.Equals(ObjectToCollideWith.ToString()))
         {
-            dialogue.gameObject.SetActive(false);
-        }
-
-        if (collision.gameObject.tag.Equals("GameStarter"))
-        {
-            gameStarter.gameObject.SetActive(false);
+            objectToSetOff.gameObject.SetActive(false);
         }
     }
 }

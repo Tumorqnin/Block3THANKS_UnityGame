@@ -7,11 +7,11 @@ TagManager:
   - QrCodeReader
   - Manager
   - door1
-  - DialogueSystem
   - NPC
   - IconsCreationCamera
   - GameStarter
-  - Game
+  - JointsGame
+  - DialogueBox
   layers:
   - Default
   - TransparentFX
