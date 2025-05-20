@@ -13,14 +13,14 @@ public class CheckCollision : MonoBehaviour
 
     void Start()
     {
-        objectToSetOff = GameObject.FindWithTag(ObjectToSetOff.ToString());
+        objectToSetOff = GameObject.FindWithTag(ObjectToSetOff.tag);
         objectToSetOff.SetActive(false);
         player_rigid = GetComponent<Rigidbody>();
     }
 
     void OnTriggerEnter(Collider collision)
     {
-        if (collision.gameObject.tag.Equals(ObjectToCollideWith.ToString()))
+        if (collision.gameObject.tag.Equals(ObjectToCollideWith.tag))
         {
             PlayerMove.moveSpeed = 0;
             objectToSetOff.gameObject.SetActive(true);
@@ -29,7 +29,7 @@ public class CheckCollision : MonoBehaviour
 
     void OnTriggerExit(Collider collision)
     {
-        if (collision.gameObject.tag.Equals(ObjectToCollideWith.ToString()))
+        if (collision.gameObject.tag.Equals(ObjectToCollideWith.tag))
         {
             objectToSetOff.gameObject.SetActive(false);
         }

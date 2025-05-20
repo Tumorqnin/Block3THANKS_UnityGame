@@ -12,6 +12,7 @@ TagManager:
   - GameStarter
   - JointsGame
   - DialogueBox
+  - DialogueSystem
   layers:
   - Default
   - TransparentFX
