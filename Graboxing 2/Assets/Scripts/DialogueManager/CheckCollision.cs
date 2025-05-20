@@ -19,7 +19,7 @@ public class CheckCollision : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("NPC"))
         {
-            PlayerMove.moveSpeed = 0;
+           // PlayerMove.moveSpeed = 0;
             dialogue.gameObject.SetActive(true);
         }
     }
