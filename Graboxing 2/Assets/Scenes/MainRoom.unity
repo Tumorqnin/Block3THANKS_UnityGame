@@ -1601,6 +1601,14 @@ PrefabInstance:
       propertyPath: _FixedTouchField
       value: 
       objectReference: {fileID: 461306460}
+    - target: {fileID: 3416699422157240948, guid: 13c84d608ab752b4d842321166f64405, type: 3}
+      propertyPath: objectToSetOff
+      value: 
+      objectReference: {fileID: 1036384880}
+    - target: {fileID: 3416699422157240948, guid: 13c84d608ab752b4d842321166f64405, type: 3}
+      propertyPath: objectToCollideWith
+      value: 
+      objectReference: {fileID: 463664292}
     - target: {fileID: 4775432718774342937, guid: 13c84d608ab752b4d842321166f64405, type: 3}
       propertyPath: m_LocalPosition.x
       value: -16.078579
@@ -2038,6 +2046,11 @@ Transform:
   - {fileID: 32785031}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1036384880 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2469907220338774811, guid: dfc3d46e0243b48aaba83d13e4ac9d60, type: 3}
+  m_PrefabInstance: {fileID: 721319803}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1047081455 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7374624694268064828, guid: fd50dd064e6b9b74783d894f394c8b73, type: 3}
