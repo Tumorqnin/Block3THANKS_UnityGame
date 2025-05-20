@@ -9,6 +9,9 @@ TagManager:
   - door1
   - DialogueSystem
   - NPC
+  - IconsCreationCamera
+  - GameStarter
+  - Game
   layers:
   - Default
   - TransparentFX

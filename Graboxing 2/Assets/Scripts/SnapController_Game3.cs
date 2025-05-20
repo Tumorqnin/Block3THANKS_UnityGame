@@ -6,7 +6,7 @@ public class SnappingJoint : MonoBehaviour
 {
     public Transform snapPoint;
     public List<DraggableJoint> draggableObjects;
-    public float snapRange = 1.5f;
+    public float snapRange = 1f;
     public static bool IsSnapped = false;
 
     // Start is called before the first frame update
