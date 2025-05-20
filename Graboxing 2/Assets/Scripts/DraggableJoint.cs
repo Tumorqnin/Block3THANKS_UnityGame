@@ -21,6 +21,7 @@ public class DraggableJoint : MonoBehaviour
 
     private void OnMouseDown()
     {
+        print("penis");
         isDragged = true;
         mouseDragStartPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         spriteDragStartPosition = transform.localPosition;
