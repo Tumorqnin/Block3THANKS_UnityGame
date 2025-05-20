@@ -19,30 +19,35 @@ public class DraggableJoint : MonoBehaviour
         snapPositionStart = this.transform.position;
     }
 
-    private void OnMouseDown()
+    private void Update()
     {
-        print("penis");
-        isDragged = true;
-        mouseDragStartPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        spriteDragStartPosition = transform.localPosition;
-    }
-
-    private void OnMouseDrag()
-    {
-        if (isDragged)
+        if(Input.touchCount > 0)
         {
-            transform.localPosition = spriteDragStartPosition + (Camera.main.ScreenToWorldPoint(Input.mousePosition) - mouseDragStartPosition);
+            Touch touch = Input.GetTouch(0);
+
+            if(touch.phase == TouchPhase.Began)
+            {
+                isDragged = true;
+                mouseDragStartPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                spriteDragStartPosition = transform.localPosition;
+            }
+            else if(touch.phase == TouchPhase.Moved)
+            {
+                if (isDragged)
+                {
+                    transform.localPosition = spriteDragStartPosition + (Camera.main.ScreenToWorldPoint(Input.mousePosition) - mouseDragStartPosition);
+                }
+            }
+            else if(touch.phase == TouchPhase.Ended)
+            {
+                isDragged = false;
+                dragEndedCallback(this);
+            }
         }
     }
 
-    public void BackToOriginal()
+    /*public void BackToOriginal()
     {
         transform.localPosition = snapPosition;
-    }
-
-    private void OnMouseUp()
-    {
-        isDragged = false;
-        dragEndedCallback(this);
-    }
+    }*/
 }
