@@ -21,7 +21,7 @@ public class QRCodeScanner : MonoBehaviour
 
     public string scannedText;
 
-    public string sceneToLoad;
+    public string sceneToLoad = "LabRoom";
     public bool unlock = false;
 
    
@@ -90,13 +90,7 @@ public class QRCodeScanner : MonoBehaviour
                 
                 _textOut.text = result.Text;
                 unlock = true;
-                DestroyerManager.unlockDoorLevel1 = true;
-                
-                
-
-              //  scannedText = _textOut.text;
-               // GameObject.FindGameObjectWithTag("door").transform.localEulerAngles = new Vector3(0, 90, 0);
-            //  SceneManager.LoadScene("MainRoom");
+             
             
             }
             else {
