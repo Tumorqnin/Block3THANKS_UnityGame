@@ -18,7 +18,7 @@ public class LensCode : MonoBehaviour
     {
         //Extract lens number from name (e.g. "lens_1" to 0)
         string objName = gameObject.name;
-        string numberString = objName.Replace("lens_", "");
+        string numberString = objName.Replace("Lens_", "");
         if (int.TryParse(numberString, out lensNumber))
         {
             lensNumber -= 1;
