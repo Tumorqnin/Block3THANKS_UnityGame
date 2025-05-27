@@ -66,7 +66,7 @@ public class LensCode : MonoBehaviour
     void On()
     {
         Variables.lenses[lensNumber] = zoom; //Indexing to make the lens the actual zoom instead of 1
-        Variables vars = FindObjectOfType<Variables>(); //Name the Variables controller so it can be called easily
+        Variables vars = FindAnyObjectByType<Variables>(); //Name the Variables controller so it can be called easily
         vars.Multiplier_Calculation(); //Calling the new multiplier calculation
         Debug.Log("Lens turned ON at zoom " + zoom);
     }
@@ -74,7 +74,7 @@ public class LensCode : MonoBehaviour
     void Off()
     {
         Variables.lenses[lensNumber] = 1;
-        Variables vars = FindObjectOfType<Variables>();
+        Variables vars = FindAnyObjectByType<Variables>();
         vars.Multiplier_Calculation();
         Debug.Log("Lens turned OFF");
     }
