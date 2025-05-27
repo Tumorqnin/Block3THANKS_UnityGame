@@ -1,8 +1,6 @@
 using UnityEngine;
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
-using UnityEngine.SceneManagement;
 
 public class Dialogue : MonoBehaviour
 {
@@ -11,20 +9,31 @@ public class Dialogue : MonoBehaviour
     public float textSpeed;
     private int index;
     public CanvasGroup panel;
+    private bool dialogueFinished = false;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void Start()
     {
         textComponent.text = string.Empty;
         panel = GetComponent<CanvasGroup>();
+        StartDialogue();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))
         {
+            if (dialogueFinished)
+            {
+                // Deactivate the entire GameObject to prevent retriggering
+                gameObject.SetActive(false);
+                PlayerMove.moveSpeed = 2f;
+                return;
+            }
+
             panel.alpha = 1;
+            panel.interactable = true;
+            panel.blocksRaycasts = true;
+
             if (textComponent.text == lines[index])
             {
                 NextLine();
@@ -35,6 +44,12 @@ public class Dialogue : MonoBehaviour
                 textComponent.text = lines[index];
             }
         }
+    }
+
+    void StartDialogue()
+    {
+        index = 0;
+        StartCoroutine(TypeLine());
     }
 
     IEnumerator TypeLine()
@@ -48,7 +63,7 @@ public class Dialogue : MonoBehaviour
 
     void NextLine()
     {
-        if(index < lines.Length - 1)
+        if (index < lines.Length - 1)
         {
             index++;
             textComponent.text = string.Empty;
@@ -56,8 +71,7 @@ public class Dialogue : MonoBehaviour
         }
         else
         {
-            PlayerMove.moveSpeed = 10f; 
-            SceneManager.LoadScene("Assets/Scenes/QRCodeReaderScene.unity");
+            dialogueFinished = true;
         }
     }
 }
