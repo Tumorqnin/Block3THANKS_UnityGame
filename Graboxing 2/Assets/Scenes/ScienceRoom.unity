@@ -1206,8 +1206,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 195235587}
   lines:
-  - Hey! So, I don't know how to say this, but I was organizing the museum artifacts...
   - ' '
+  - This time around you need to place the correct pairs in the same order that you
+    saw them.
   - ' '
   - ' '
   - ' '
