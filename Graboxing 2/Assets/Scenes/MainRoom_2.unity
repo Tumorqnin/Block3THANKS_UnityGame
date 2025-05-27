@@ -1071,17 +1071,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 32785031}
     m_Modifications:
-    - target: {fileID: 632820849628978355, guid: 1bc30806e6f4bc74d8b43c5256350af2, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
     - target: {fileID: 3397588211808345941, guid: 1bc30806e6f4bc74d8b43c5256350af2, type: 3}
       propertyPath: m_Name
       value: Door_Next_Level_Prefab_New Variant
-      objectReference: {fileID: 0}
-    - target: {fileID: 3397588211808345941, guid: 1bc30806e6f4bc74d8b43c5256350af2, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4307057399714767792, guid: 1bc30806e6f4bc74d8b43c5256350af2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1127,21 +1119,9 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6547227023763679611, guid: 1bc30806e6f4bc74d8b43c5256350af2, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 6977999265656467751, guid: 1bc30806e6f4bc74d8b43c5256350af2, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
     - target: {fileID: 7628435808019955438, guid: 1bc30806e6f4bc74d8b43c5256350af2, type: 3}
       propertyPath: m_IsTrigger
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8126121179427069959, guid: 1bc30806e6f4bc74d8b43c5256350af2, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 8903080468693859005, guid: 1bc30806e6f4bc74d8b43c5256350af2, type: 3}
       propertyPath: m_LocalRotation.w
