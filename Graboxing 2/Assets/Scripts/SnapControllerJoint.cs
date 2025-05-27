@@ -20,7 +20,7 @@ public class SnapControllerJoint : MonoBehaviour
     {
         float currentDistance = Vector2.Distance(draggable.transform.localPosition, snapPoint.localPosition);
 
-        if(currentDistance <= snapRange)
+        if (currentDistance <= snapRange)
         {
             draggable.transform.localPosition = snapPoint.localPosition;
             draggable.isSnapped = true;
