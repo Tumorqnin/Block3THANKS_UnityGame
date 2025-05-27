@@ -45,7 +45,7 @@ public class Variables : MonoBehaviour
         // Double check if the zoom is still 200 after the delay
         if (total_zoom == 200)
         {
-            SceneManager.LoadScene("MainRoom");
+            SceneManager.LoadScene("MainRoom_2");
         }
         else
         {

@@ -20,6 +20,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LabRoom.unity
     guid: cc07a8c56d6d74d5f9b647c78f4c38ad
+  - enabled: 1
+    path: Assets/Scenes/MainRoom_2.unity
+    guid: 803e84a85b0c23e439e991009e256f48
+  - enabled: 1
+    path: Assets/Scenes/QRCodeReaderScene_2.unity
+    guid: 78ce9eac415120844b29cb69db97c389
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

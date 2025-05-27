@@ -21,15 +21,15 @@ public class QRCodeScanner : MonoBehaviour
 
     public string scannedText;
 
-    public string sceneToLoad = "LabRoom";
+    public string sceneToLoad = "ScienceRoom";
     public bool unlock = false;
 
-   
+
 
     void Start()
     {
         SetUpCamera();
-        
+
     }
 
     // Update is called once per frame
@@ -37,7 +37,7 @@ public class QRCodeScanner : MonoBehaviour
     {
         UpdateCameraRender();
         UnlockDoor();
-        
+
     }
 
     private void SetUpCamera()
@@ -87,30 +87,32 @@ public class QRCodeScanner : MonoBehaviour
             Result result = barcodeReader.Decode(_cameraTexture.GetPixels32(), _cameraTexture.width, _cameraTexture.height);
             if (result != null)
             {
-                
+
                 _textOut.text = result.Text;
                 unlock = true;
-             
-            
+
+
             }
-            else {
+            else
+            {
                 _textOut.text = "Failed to Read QR CODE";
-                
+
             }
         }
         catch
         {
             _textOut.text = "Failed to read. Please, try again.";
-            
+
         }
     }
 
     public void UnlockDoor()
     {
-        if (unlock == true){
+        if (unlock == true)
+        {
 
-          //  GameObject.FindGameObjectWithTag("door").transform.localEulerAngles = new Vector3(0, 90, 0);
             SceneManager.LoadScene(sceneToLoad);
         }
     }
 }
+
