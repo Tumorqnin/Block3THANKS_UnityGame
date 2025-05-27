@@ -916,6 +916,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7628435808019955438, guid: 1bc30806e6f4bc74d8b43c5256350af2, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8903080468693859005, guid: 1bc30806e6f4bc74d8b43c5256350af2, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0
@@ -1362,8 +1366,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 5, y: 1, z: 5}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: -1}
 --- !u!23 &463664295
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1426,7 +1430,7 @@ Transform:
   m_GameObject: {fileID: 463664292}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.781343, y: 5.3751755, z: -7.0891647}
+  m_LocalPosition: {x: 4.3, y: 5.85, z: -6.7}
   m_LocalScale: {x: 0.39, y: 0.39, z: 0.39}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -2200,6 +2204,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 220262519917009251, guid: dfc3d46e0243b48aaba83d13e4ac9d60, type: 3}
+      propertyPath: lines.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 220262519917009251, guid: dfc3d46e0243b48aaba83d13e4ac9d60, type: 3}
+      propertyPath: 'lines.Array.data[0]'
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 220262519917009251, guid: dfc3d46e0243b48aaba83d13e4ac9d60, type: 3}
+      propertyPath: 'lines.Array.data[1]'
+      value: Hey! So, I don't know how to say this, but I was organizing the museum
+        artifacts...
+      objectReference: {fileID: 0}
+    - target: {fileID: 220262519917009251, guid: dfc3d46e0243b48aaba83d13e4ac9d60, type: 3}
+      propertyPath: 'lines.Array.data[2]'
+      value: ...and I lost the keys to unlock the doors to them. Can you please help
+        me unlock the doors? >.<
+      objectReference: {fileID: 0}
+    - target: {fileID: 220262519917009251, guid: dfc3d46e0243b48aaba83d13e4ac9d60, type: 3}
+      propertyPath: 'lines.Array.data[3]'
+      value: For starters, search for the Zernike exposition, find the QR code and
+        scan it to unlock the first door behind you!
+      objectReference: {fileID: 0}
+    - target: {fileID: 220262519917009251, guid: dfc3d46e0243b48aaba83d13e4ac9d60, type: 3}
+      propertyPath: 'lines.Array.data[4]'
+      value: Go through that door!
+      objectReference: {fileID: 0}
     - target: {fileID: 2469907220338774811, guid: dfc3d46e0243b48aaba83d13e4ac9d60, type: 3}
       propertyPath: m_TagString
       value: DialogueBox
@@ -2341,10 +2372,22 @@ PrefabInstance:
       propertyPath: groundCheck
       value: 
       objectReference: {fileID: 411571675}
+    - target: {fileID: 2845510728761400962, guid: 13c84d608ab752b4d842321166f64405, type: 3}
+      propertyPath: sceneToLoad
+      value: QRCodeReaderScene
+      objectReference: {fileID: 0}
     - target: {fileID: 2845510728761400972, guid: 13c84d608ab752b4d842321166f64405, type: 3}
       propertyPath: _FixedTouchField
       value: 
       objectReference: {fileID: 461306460}
+    - target: {fileID: 2845510730807930432, guid: 13c84d608ab752b4d842321166f64405, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845510730807930432, guid: 13c84d608ab752b4d842321166f64405, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3416699422157240948, guid: 13c84d608ab752b4d842321166f64405, type: 3}
       propertyPath: objectToSetOff
       value: 
@@ -3037,51 +3080,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7374624694268064828, guid: fd50dd064e6b9b74783d894f394c8b73, type: 3}
   m_PrefabInstance: {fileID: 1143831309}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1050319351
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1050319353}
-  - component: {fileID: 1050319352}
-  m_Layer: 0
-  m_Name: DoorManager
-  m_TagString: Manager
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1050319352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1050319351}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48c548dfe9d2aa04e994221cf6b2b0c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  doortracker: {fileID: 0}
---- !u!4 &1050319353
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1050319351}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.5144634, y: 4.9031754, z: -2.9654694}
-  m_LocalScale: {x: 0.13, y: 0.13, z: 0.13}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1072055604
 GameObject:
   m_ObjectHideFlags: 0
@@ -4961,6 +4959,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door_Next_Level_Prefab_New
       objectReference: {fileID: 0}
+    - target: {fileID: 3397588211808345941, guid: 1bc30806e6f4bc74d8b43c5256350af2, type: 3}
+      propertyPath: m_TagString
+      value: SceneChanger
+      objectReference: {fileID: 0}
     - target: {fileID: 4307057399714767792, guid: 1bc30806e6f4bc74d8b43c5256350af2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.3
@@ -5005,6 +5007,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7628435808019955438, guid: 1bc30806e6f4bc74d8b43c5256350af2, type: 3}
+      propertyPath: m_Size.x
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628435808019955438, guid: 1bc30806e6f4bc74d8b43c5256350af2, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5022,7 +5032,6 @@ SceneRoots:
   - {fileID: 410087041}
   - {fileID: 832575519}
   - {fileID: 1012826405}
-  - {fileID: 1050319353}
   - {fileID: 721319803}
   - {fileID: 1973961592}
   - {fileID: 463664297}

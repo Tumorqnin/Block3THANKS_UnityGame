@@ -6,12 +6,12 @@ TagManager:
   tags:
   - QrCodeReader
   - Manager
-  - door1
   - NPC
   - IconsCreationCamera
   - GameStarter
   - JointsGame
   - DialogueBox
+  - SceneChanger
   layers:
   - Default
   - TransparentFX
