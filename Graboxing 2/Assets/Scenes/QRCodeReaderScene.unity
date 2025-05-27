@@ -772,7 +772,7 @@ MonoBehaviour:
   _textOut: {fileID: 431170521}
   _scanZone: {fileID: 1161227196}
   scannedText: unlockpuzzle1
-  sceneToLoad: ScienceRoom
+  sceneToLoad: MainRoom
   unlock: 0
 --- !u!4 &1455274788
 Transform:
