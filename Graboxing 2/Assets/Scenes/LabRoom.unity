@@ -1480,9 +1480,6 @@ MonoBehaviour:
   - ' '
   - You have to drag the lenses in the microscope to reach a certain score!
   - 'Did you read how to solve the puzzle? '
-  - ' '
-  - ' '
-  - You have to reach x200 zoom on the microscope!
   textSpeed: 0
   panel: {fileID: 560834745}
 --- !u!114 &560834747

@@ -2747,7 +2747,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 220262519917009251, guid: dfc3d46e0243b48aaba83d13e4ac9d60, type: 3}
       propertyPath: lines.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 220262519917009251, guid: dfc3d46e0243b48aaba83d13e4ac9d60, type: 3}
       propertyPath: 'lines.Array.data[0]'
@@ -2755,22 +2755,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 220262519917009251, guid: dfc3d46e0243b48aaba83d13e4ac9d60, type: 3}
       propertyPath: 'lines.Array.data[1]'
-      value: Hey! So, I don't know how to say this, but I was organizing the museum
-        artifacts...
+      value: Hey there, I know it does not make much sense, but I got stuck in the
+        building.
       objectReference: {fileID: 0}
     - target: {fileID: 220262519917009251, guid: dfc3d46e0243b48aaba83d13e4ac9d60, type: 3}
       propertyPath: 'lines.Array.data[2]'
-      value: ...and I lost the keys to unlock the doors to them. Can you please help
-        me unlock the doors? >.<
+      value: You see, to exit the building one needs to solve all the puzzles, but
+        it turns out I am not smart enough UwU!
       objectReference: {fileID: 0}
     - target: {fileID: 220262519917009251, guid: dfc3d46e0243b48aaba83d13e4ac9d60, type: 3}
       propertyPath: 'lines.Array.data[3]'
-      value: For starters, search for the Zernike exposition, find the QR code and
-        scan it to unlock the first door behind you!
+      value: Maybeee, you could help me? Pretty pleaseee!
       objectReference: {fileID: 0}
     - target: {fileID: 220262519917009251, guid: dfc3d46e0243b48aaba83d13e4ac9d60, type: 3}
       propertyPath: 'lines.Array.data[4]'
-      value: Go through that door!
+      value: You will help me! Yes! Thank you so much!
+      objectReference: {fileID: 0}
+    - target: {fileID: 220262519917009251, guid: dfc3d46e0243b48aaba83d13e4ac9d60, type: 3}
+      propertyPath: 'lines.Array.data[5]'
+      value: First things first, go through that door.
+      objectReference: {fileID: 0}
+    - target: {fileID: 542080741505178444, guid: dfc3d46e0243b48aaba83d13e4ac9d60, type: 3}
+      propertyPath: m_fontSize
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 542080741505178444, guid: dfc3d46e0243b48aaba83d13e4ac9d60, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 2469907220338774811, guid: dfc3d46e0243b48aaba83d13e4ac9d60, type: 3}
       propertyPath: m_TagString
