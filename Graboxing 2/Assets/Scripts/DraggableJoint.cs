@@ -1,5 +1,8 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
+using System.Collections;
+
 
 public class DraggableJoint : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IDragHandler
 {
@@ -10,10 +13,16 @@ public class DraggableJoint : MonoBehaviour, IPointerDownHandler, IPointerUpHand
     private Vector2 pointerOffset;
     private bool isDragged = false;
     public bool isSnapped = false;
+    private int counter = 0;
 
     void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
+    }
+
+    private void Update()
+    {
+        LoadSceneAfterDelay("MainRoom", 1f);
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -41,5 +50,11 @@ public class DraggableJoint : MonoBehaviour, IPointerDownHandler, IPointerUpHand
     {
         dragEndedCallback(this);
         isDragged = false;
+    }
+
+    private IEnumerator LoadSceneAfterDelay(string sceneName, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        SceneManager.LoadScene(sceneName);
     }
 }
