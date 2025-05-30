@@ -36,6 +36,7 @@ public class QRCodeScanner : MonoBehaviour
     void Update()
     {
         UpdateCameraRender();
+        Scan();
         UnlockDoor();
 
     }
@@ -75,10 +76,7 @@ public class QRCodeScanner : MonoBehaviour
         _rawImageBackground.rectTransform.localEulerAngles = new Vector3(0, 0, orientation);
 
     }
-    public void OnClickScan()
-    {
-        Scan();
-    }
+    
     public void Scan()
     {
         try

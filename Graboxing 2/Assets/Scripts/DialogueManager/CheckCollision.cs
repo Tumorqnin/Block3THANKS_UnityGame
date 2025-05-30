@@ -22,7 +22,7 @@ public class CheckCollision : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals(ObjectToCollideWith.tag))
         {
-            PlayerMove.moveSpeed = 0;
+            
             objectToSetOff.gameObject.SetActive(true);
         }
     }
@@ -32,6 +32,7 @@ public class CheckCollision : MonoBehaviour
         if (collision.gameObject.tag.Equals(ObjectToCollideWith.tag))
         {
             objectToSetOff.gameObject.SetActive(false);
+            
         }
     }
 }
