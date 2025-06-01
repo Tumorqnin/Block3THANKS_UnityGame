@@ -16,11 +16,22 @@ public class CheckCollision : MonoBehaviour
         objectToSetOff.SetActive(false);
     }
 
+    private void Update()
+    {
+        if(objectToSetOff.gameObject.activeInHierarchy == false)
+        {
+            CharacterMovement.moveSpeed = 2f;
+        }
+        else
+        {
+            CharacterMovement.moveSpeed = 0f;
+        }
+    }
+
     void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.tag.Equals(ObjectToCollideWith.tag))
         {
-            CharacterMovement.moveSpeed = 0f;
             objectToSetOff.gameObject.SetActive(true);
         }
     }
@@ -30,7 +41,6 @@ public class CheckCollision : MonoBehaviour
         if (collision.gameObject.tag.Equals(ObjectToCollideWith.tag))
         {
             objectToSetOff.gameObject.SetActive(false);
-            CharacterMovement.moveSpeed = 2f;
         }
     }
 }
