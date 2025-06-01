@@ -24,9 +24,7 @@ public class Dialogue : MonoBehaviour
         {
             if (dialogueFinished)
             {
-                // Deactivate the entire GameObject to prevent retriggering
                 gameObject.SetActive(false);
-                PlayerMove.moveSpeed = 2f;
                 return;
             }
 

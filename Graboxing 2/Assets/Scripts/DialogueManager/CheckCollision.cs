@@ -1,46 +1,35 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
-
+using System.Collections.Generic;
 
 public class CheckCollision : MonoBehaviour
 {
-    [SerializeField] private GameObject objectToCollideWith;
-    public GameObject ObjectToCollideWith => objectToCollideWith;
-    [SerializeField] private GameObject objectToSetOff;
-    public GameObject ObjectToSetOff => objectToSetOff;
-
-    void Start()
-    {
-        objectToSetOff = GameObject.FindWithTag(ObjectToSetOff.tag);
-        objectToSetOff.SetActive(false);
-    }
+    private List<GameObject> colliders = new List<GameObject>();
 
     private void Update()
     {
-        if(objectToSetOff.gameObject.activeInHierarchy == false)
+        bool stopMove = false;
+        foreach(GameObject collider in colliders)
         {
-            CharacterMovement.moveSpeed = 2f;
+            if (collider.activeSelf)
+            {
+                stopMove = true;
+            }
         }
-        else
-        {
-            CharacterMovement.moveSpeed = 0f;
-        }
+            CharacterMovement.moveSpeed = stopMove ? 0f : 2f;
     }
 
     void OnTriggerEnter(Collider collision)
     {
-        if (collision.gameObject.tag.Equals(ObjectToCollideWith.tag))
+        StopMovementCollider stopMovementCollider = collision.GetComponent<StopMovementCollider>();
+        if (stopMovementCollider)
         {
-            objectToSetOff.gameObject.SetActive(true);
-        }
-    }
-
-    void OnTriggerExit(Collider collision)
-    {
-        if (collision.gameObject.tag.Equals(ObjectToCollideWith.tag))
-        {
-            objectToSetOff.gameObject.SetActive(false);
+            foreach(GameObject objectToSetOff in stopMovementCollider.objectsToSetOff)
+            {
+                colliders.Add(objectToSetOff);
+                objectToSetOff.SetActive(true);
+            }
         }
     }
 }
