@@ -2567,6 +2567,34 @@ PrefabInstance:
       propertyPath: m_TagString
       value: DialogueBox
       objectReference: {fileID: 0}
+    - target: {fileID: 7516792086388121505, guid: dfc3d46e0243b48aaba83d13e4ac9d60, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7516792086388121505, guid: dfc3d46e0243b48aaba83d13e4ac9d60, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7516792086388121505, guid: dfc3d46e0243b48aaba83d13e4ac9d60, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7516792086388121505, guid: dfc3d46e0243b48aaba83d13e4ac9d60, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7516792086388121505, guid: dfc3d46e0243b48aaba83d13e4ac9d60, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 280
+      objectReference: {fileID: 0}
+    - target: {fileID: 7516792086388121505, guid: dfc3d46e0243b48aaba83d13e4ac9d60, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 7516792086388121505, guid: dfc3d46e0243b48aaba83d13e4ac9d60, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8417103731995250310, guid: dfc3d46e0243b48aaba83d13e4ac9d60, type: 3}
       propertyPath: m_Name
       value: Dialogue_Box_Prefab
