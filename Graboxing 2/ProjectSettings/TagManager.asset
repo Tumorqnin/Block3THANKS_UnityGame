@@ -12,6 +12,8 @@ TagManager:
   - JointsGame
   - DialogueBox
   - SceneChanger
+  - DialogueSystem
+  - Focus
   layers:
   - Default
   - TransparentFX
