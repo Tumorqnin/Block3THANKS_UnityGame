@@ -2640,7 +2640,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 220262519917009251, guid: dfc3d46e0243b48aaba83d13e4ac9d60, type: 3}
       propertyPath: 'lines.Array.data[0]'
-      value: ' '
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 220262519917009251, guid: dfc3d46e0243b48aaba83d13e4ac9d60, type: 3}
       propertyPath: 'lines.Array.data[1]'
