@@ -2157,6 +2157,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Particles_Prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 8446136421072544599, guid: 2c913c79fd7f82c479f751d1f4f2f57e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8802725480657324582, guid: 2c913c79fd7f82c479f751d1f4f2f57e, type: 3}
       propertyPath: InitialModule.startSpeed.scalar
       value: 0.24

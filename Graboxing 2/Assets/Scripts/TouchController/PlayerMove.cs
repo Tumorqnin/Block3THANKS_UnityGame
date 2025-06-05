@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMove : MonoBehaviour
 {
-    public FixedJoystick joystick;
     public static float moveSpeed = 2f;
     public float gravity = -9.81f;
 
@@ -34,10 +33,6 @@ public class PlayerMove : MonoBehaviour
         {
             velocity.y = -2f; // small downward force to keep grounded
         }
-
-        // Get joystick input
-        Vector3 move = transform.right * joystick.Horizontal + transform.forward * joystick.Vertical;
-        controller.Move(move * moveSpeed * Time.deltaTime);
 
         // Apply gravity
         velocity.y += gravity * Time.deltaTime;
