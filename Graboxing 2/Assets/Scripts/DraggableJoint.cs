@@ -20,11 +20,6 @@ public class DraggableJoint : MonoBehaviour, IPointerDownHandler, IPointerUpHand
         rectTransform = GetComponent<RectTransform>();
     }
 
-    private void Update()
-    {
-        LoadSceneAfterDelay("MainRoom", 1f);
-    }
-
     public void OnPointerDown(PointerEventData eventData)
     {
         if (isSnapped) return;
