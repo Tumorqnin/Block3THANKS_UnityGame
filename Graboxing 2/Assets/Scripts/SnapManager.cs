@@ -33,7 +33,7 @@ public class SnapManager : MonoBehaviour
         if (allDraggablesSnapped || usedSnapPoints >= 5)
         {
             sceneLoaded = true;
-            StartCoroutine(LoadSceneAfterDelay("MainRoom", 1f));
+            StartCoroutine(LoadSceneAfterDelay("MainRoom_3", 1f));
         }
     }
 
