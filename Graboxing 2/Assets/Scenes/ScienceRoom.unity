@@ -842,10 +842,26 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 124259498061412098, guid: 1cfbfa2cf0c4cf249b161020c46180cd, type: 3}
+      propertyPath: m_Size.z
+      value: 1.6934979
+      objectReference: {fileID: 0}
+    - target: {fileID: 124259498061412098, guid: 1cfbfa2cf0c4cf249b161020c46180cd, type: 3}
+      propertyPath: m_Center.x
+      value: 0.79752886
+      objectReference: {fileID: 0}
+    - target: {fileID: 124259498061412098, guid: 1cfbfa2cf0c4cf249b161020c46180cd, type: 3}
+      propertyPath: m_Center.z
+      value: 1.3450484
+      objectReference: {fileID: 0}
     - target: {fileID: 1092740879827723320, guid: 1cfbfa2cf0c4cf249b161020c46180cd, type: 3}
       propertyPath: m_Name
       value: Wall_Textured_Prefab (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 7016695662695410120, guid: 1cfbfa2cf0c4cf249b161020c46180cd, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: fdc9cc37a906b2541b8f975845943db6, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2131,10 +2147,26 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 124259498061412098, guid: 1cfbfa2cf0c4cf249b161020c46180cd, type: 3}
+      propertyPath: m_Size.z
+      value: 1.7203718
+      objectReference: {fileID: 0}
+    - target: {fileID: 124259498061412098, guid: 1cfbfa2cf0c4cf249b161020c46180cd, type: 3}
+      propertyPath: m_Center.x
+      value: 0.7975288
+      objectReference: {fileID: 0}
+    - target: {fileID: 124259498061412098, guid: 1cfbfa2cf0c4cf249b161020c46180cd, type: 3}
+      propertyPath: m_Center.z
+      value: 1.6205828
+      objectReference: {fileID: 0}
     - target: {fileID: 1092740879827723320, guid: 1cfbfa2cf0c4cf249b161020c46180cd, type: 3}
       propertyPath: m_Name
       value: Wall_Textured_Prefab (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7016695662695410120, guid: 1cfbfa2cf0c4cf249b161020c46180cd, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: fdc9cc37a906b2541b8f975845943db6, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2492,10 +2524,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 124259498061412098, guid: 1cfbfa2cf0c4cf249b161020c46180cd, type: 3}
+      propertyPath: m_Size.z
+      value: 1.6837692
+      objectReference: {fileID: 0}
+    - target: {fileID: 124259498061412098, guid: 1cfbfa2cf0c4cf249b161020c46180cd, type: 3}
+      propertyPath: m_Center.z
+      value: 1.6022816
+      objectReference: {fileID: 0}
     - target: {fileID: 1092740879827723320, guid: 1cfbfa2cf0c4cf249b161020c46180cd, type: 3}
       propertyPath: m_Name
       value: Wall_Textured_Prefab (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7016695662695410120, guid: 1cfbfa2cf0c4cf249b161020c46180cd, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: fdc9cc37a906b2541b8f975845943db6, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5044,10 +5088,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 124259498061412098, guid: 1cfbfa2cf0c4cf249b161020c46180cd, type: 3}
+      propertyPath: m_Size.z
+      value: 1.6407266
+      objectReference: {fileID: 0}
+    - target: {fileID: 124259498061412098, guid: 1cfbfa2cf0c4cf249b161020c46180cd, type: 3}
+      propertyPath: m_Center.z
+      value: 1.371434
+      objectReference: {fileID: 0}
     - target: {fileID: 1092740879827723320, guid: 1cfbfa2cf0c4cf249b161020c46180cd, type: 3}
       propertyPath: m_Name
       value: Wall_Textured_Prefab (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7016695662695410120, guid: 1cfbfa2cf0c4cf249b161020c46180cd, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: fdc9cc37a906b2541b8f975845943db6, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
