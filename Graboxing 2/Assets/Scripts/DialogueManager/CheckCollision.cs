@@ -61,6 +61,8 @@ public class CheckCollision : MonoBehaviour
                 objectToSetOff.SetActive(true);
             }
         }
+
+        
     }
 
     void OnTriggerExit(Collider collision)
