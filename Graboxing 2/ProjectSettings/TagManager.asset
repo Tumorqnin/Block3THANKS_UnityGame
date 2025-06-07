@@ -14,6 +14,7 @@ TagManager:
   - SceneChanger
   - DialogueSystem
   - Focus
+  - Bloby
   layers:
   - Default
   - TransparentFX
