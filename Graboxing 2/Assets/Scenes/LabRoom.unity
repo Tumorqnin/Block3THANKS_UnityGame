@@ -343,7 +343,7 @@ PrefabInstance:
     - target: {fileID: 7016695662695410120, guid: 1cfbfa2cf0c4cf249b161020c46180cd, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 3c4059003bbf13b4d96f9ae4532f1b3c, type: 2}
+      objectReference: {fileID: 2100000, guid: 51ee4669820d3c749a0b2e82a3e9d829, type: 2}
     - target: {fileID: 8818245944925767709, guid: 1cfbfa2cf0c4cf249b161020c46180cd, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
@@ -666,7 +666,7 @@ PrefabInstance:
     - target: {fileID: 7016695662695410120, guid: 1cfbfa2cf0c4cf249b161020c46180cd, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 3c4059003bbf13b4d96f9ae4532f1b3c, type: 2}
+      objectReference: {fileID: 2100000, guid: 51ee4669820d3c749a0b2e82a3e9d829, type: 2}
     - target: {fileID: 8818245944925767709, guid: 1cfbfa2cf0c4cf249b161020c46180cd, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
@@ -4898,7 +4898,7 @@ PrefabInstance:
     - target: {fileID: 7016695662695410120, guid: 1cfbfa2cf0c4cf249b161020c46180cd, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 3c4059003bbf13b4d96f9ae4532f1b3c, type: 2}
+      objectReference: {fileID: 2100000, guid: 51ee4669820d3c749a0b2e82a3e9d829, type: 2}
     - target: {fileID: 8818245944925767709, guid: 1cfbfa2cf0c4cf249b161020c46180cd, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
@@ -5333,7 +5333,7 @@ PrefabInstance:
     - target: {fileID: 7016695662695410120, guid: 1cfbfa2cf0c4cf249b161020c46180cd, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 3c4059003bbf13b4d96f9ae4532f1b3c, type: 2}
+      objectReference: {fileID: 2100000, guid: 51ee4669820d3c749a0b2e82a3e9d829, type: 2}
     - target: {fileID: 8818245944925767709, guid: 1cfbfa2cf0c4cf249b161020c46180cd, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
