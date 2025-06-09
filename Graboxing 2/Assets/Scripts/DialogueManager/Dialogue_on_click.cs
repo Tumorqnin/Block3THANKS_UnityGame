@@ -13,7 +13,7 @@ public class Dialogue_on_click : MonoBehaviour
 
     public void Start()
     {
-        
+
     }
 
     void Update()

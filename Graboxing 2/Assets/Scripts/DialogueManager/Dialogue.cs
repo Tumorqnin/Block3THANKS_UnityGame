@@ -44,6 +44,7 @@ public class Dialogue : MonoBehaviour
         }
     }
 
+
     void StartDialogue()
     {
         index = 0;
@@ -67,6 +68,7 @@ public class Dialogue : MonoBehaviour
             textComponent.text = string.Empty;
             StartCoroutine(TypeLine());
         }
+
         else
         {
             dialogueFinished = true;
