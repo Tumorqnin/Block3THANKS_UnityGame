@@ -275,7 +275,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 428.6, y: -27}
+  m_AnchoredPosition: {x: 425, y: -33}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &40465644
@@ -2627,9 +2627,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 282148877}
   lines:
-  - Ben je er achter gekomen hoe je de puzzel moet oplossen? Ik denk dat het iets
+  - ' Ben je er achter gekomen hoe je de puzzel moet oplossen? Ik denk dat het iets
     te maken heeft met de plaatsing van de objecten, maar kijk voorzichtig of dat
-    ook zo is.
+    ook zo is.'
   textSpeed: 0
   panel: {fileID: 890438634}
 --- !u!114 &890438636
@@ -2684,14 +2684,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 282148877}
   lines:
-  - Deze puzzel is ook moeilijk. Als je goed kijkt naar de tentoonstelling, dan kan
-    je zien hoe de botten aan elkaar zitten. Het doel is om deze tentoonstelling
-    helemaal na te maken. Kijk goed
-  - naar welke volgorde (van links naar rechts) welke botten voorkomen omdat je dit
-    ook in het spel moet namaken. Sleep de verschillende botten naar de juiste locatie
-    en combineer ze correct. Als alle botten in de goede plaats staan win je het
-    spel!
-  textSpeed: 0
+  - ' Probeer de botten precies zoals de tentoonstelling na te maken van links naar
+    rechts in de goede volgorde.'
+  textSpeed: -1
   panel: {fileID: 890438634}
 --- !u!1 &892494184
 GameObject:
@@ -2954,7 +2949,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -401, y: -26.5}
+  m_AnchoredPosition: {x: -401, y: -28}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1085660673
@@ -3047,7 +3042,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 821.7, y: -26.3}
+  m_AnchoredPosition: {x: 818, y: -31}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1086740904
@@ -3140,7 +3135,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -819.1, y: -24.8}
+  m_AnchoredPosition: {x: -819.1, y: -36}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1089245504
@@ -4097,7 +4092,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10.9, y: -25}
+  m_AnchoredPosition: {x: 7, y: -29}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1160303911
@@ -4608,7 +4603,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f785a485033cbf5459f4d8791c9eeca8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: eed83bd5009e042bd86b5834927a79f0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6080,10 +6075,6 @@ PrefabInstance:
     - target: {fileID: 3071877356360599949, guid: 7ab4adc0720dd0344893f31485c223c0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3071877356360599949, guid: 7ab4adc0720dd0344893f31485c223c0, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3071877356360599949, guid: 7ab4adc0720dd0344893f31485c223c0, type: 3}
       propertyPath: m_ConstrainProportionsScale

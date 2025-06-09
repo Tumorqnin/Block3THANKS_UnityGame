@@ -1714,8 +1714,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1590035551}
   lines:
-  - Weet je hoe je de puzzel moet oplossen? Er zit een belangrijke hint verstopt
-    in de tentoonstelling. Lees de tekst opnieuw als je er niet achter komt.
+  - ' Weet je hoe je de puzzel moet oplossen? Er zit een belangrijke hint verstopt
+    in de tentoonstelling. Lees de tekst opnieuw als je er niet achter komt.'
   textSpeed: 0
   panel: {fileID: 560834745}
 --- !u!114 &560834747
@@ -1790,11 +1790,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1590035551}
   lines:
-  - Dit is een moeilijke puzzel. Als je goed kijkt naar de tekst in het museum naast
-    de microscoop. Ergens in de tekst staat iets over hoeveel 1 van de eerste microscopen
-    kon vergroten. Je kan de lenzen slepen in het spel naar de open sleuven. Als
-    de vergroting in het spel hetzelfde is als de eerste microscopen, dan win je!
-  textSpeed: 0
+  - ' Kijk naar de tekst in het museum, je zoekt naar de vergroting van de eerste
+    microscopen. Maak deze na met de lenzen door te slepen. '
+  textSpeed: -3
   panel: {fileID: 560834745}
 --- !u!1001 &568401525
 PrefabInstance:
@@ -2505,6 +2503,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!4 &719486094 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7601990626762822046, guid: 511416ca6ace86d4f96164fbb59c4995, type: 3}
+  m_PrefabInstance: {fileID: 960430363}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &725041613
 GameObject:
   m_ObjectHideFlags: 0
@@ -2709,26 +2712,6 @@ PrefabInstance:
       value: 3.569
       objectReference: {fileID: 0}
     - target: {fileID: 7601990626762822046, guid: 511416ca6ace86d4f96164fbb59c4995, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8416321693442718563, guid: 511416ca6ace86d4f96164fbb59c4995, type: 3}
-      propertyPath: m_Name
-      value: New_Floor_Prefab1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7601990626762822046, guid: 511416ca6ace86d4f96164fbb59c4995, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 4.097
-      objectReference: {fileID: 0}
-    - target: {fileID: 7601990626762822046, guid: 511416ca6ace86d4f96164fbb59c4995, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.632
-      objectReference: {fileID: 0}
-    - target: {fileID: 7601990626762822046, guid: 511416ca6ace86d4f96164fbb59c4995, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 3.569
-      objectReference: {fileID: 0}
-    - target: {fileID: 7601990626762822046, guid: 511416ca6ace86d4f96164fbb59c4995, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
@@ -2755,6 +2738,14 @@ PrefabInstance:
     - target: {fileID: 7601990626762822046, guid: 511416ca6ace86d4f96164fbb59c4995, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7601990626762822046, guid: 511416ca6ace86d4f96164fbb59c4995, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8416321693442718563, guid: 511416ca6ace86d4f96164fbb59c4995, type: 3}
+      propertyPath: m_Name
+      value: New_Floor_Prefab1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3623,7 +3614,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8417103731995250310, guid: dfc3d46e0243b48aaba83d13e4ac9d60, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -5580,6 +5571,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6920600858513772417, guid: f89fb2ab623bbe44c9b97824b5a9fbc9, type: 3}
+      propertyPath: m_Name
+      value: New_Ceiling_Prefab1
+      objectReference: {fileID: 0}
     - target: {fileID: 7294108123484138875, guid: f89fb2ab623bbe44c9b97824b5a9fbc9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.601
@@ -5619,10 +5614,6 @@ PrefabInstance:
     - target: {fileID: 7294108123484138875, guid: f89fb2ab623bbe44c9b97824b5a9fbc9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6920600858513772417, guid: f89fb2ab623bbe44c9b97824b5a9fbc9, type: 3}
-      propertyPath: m_Name
-      value: New_Ceiling_Prefab1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5853,7 +5844,7 @@ PrefabInstance:
     - target: {fileID: 5227770477573599661, guid: a4bacfbf81da84d498f4ff319d65375d, type: 3}
       propertyPath: groundCheck
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 719486094}
     - target: {fileID: 5227770477573599661, guid: a4bacfbf81da84d498f4ff319d65375d, type: 3}
       propertyPath: sceneToLoad
       value: MainRoom_2

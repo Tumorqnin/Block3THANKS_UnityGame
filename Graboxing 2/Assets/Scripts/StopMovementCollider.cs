@@ -9,11 +9,11 @@ public class StopMovementCollider : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        npcAnimator = GameObject.FindGameObjectWithTag("Bloby").GetComponent<Animator>();
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Collider>();
-
         foreach (GameObject objectToSetOff in objectsToSetOff)
             objectToSetOff.SetActive(false);
+
+        npcAnimator = GameObject.FindGameObjectWithTag("Bloby").GetComponent<Animator>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Collider>();
 
     }
     
