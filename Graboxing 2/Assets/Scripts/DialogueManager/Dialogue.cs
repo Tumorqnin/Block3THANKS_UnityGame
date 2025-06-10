@@ -9,7 +9,7 @@ public class Dialogue : MonoBehaviour
     public float textSpeed;
     private int index;
     public CanvasGroup panel;
-    private bool dialogueFinished = false;
+    public static bool dialogueFinished = false;
 
     public void Start()
     {

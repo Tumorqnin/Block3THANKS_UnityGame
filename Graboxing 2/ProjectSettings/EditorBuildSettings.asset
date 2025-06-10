@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainRoom_3.unity
     guid: 01e7d1706edbb42359579793424d3f18
   - enabled: 1
+    path: Assets/Scenes/End.unity
+    guid: 9652e12d7ccf44b86bc78e2aece59023
+  - enabled: 1
     path: Assets/Scenes/ScienceRoom.unity
     guid: e64f60e75891348dc823f768ea37813c
   - enabled: 0
